@@ -2,12 +2,18 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>He who throws the first stone...</title>
+    <title>Lighhouse</title>
     <script src="libraries/p5.js" type="text/javascript"></script>
     <script src="libraries/p5.dom.js" type="text/javascript"></script>
     <script src="libraries/p5.sound.js" type="text/javascript"></script>
     <script src="libraries/p5.collide2d.js" type="text/javascript"></script>
     <script src="vehicle.js" type="text/javascript"></script>
+    
+    <script language="javascript" type="text/javascript" src="dna.js"></script>
+    <script language="javascript" type="text/javascript" src="population.js"></script>
+    <script language="javascript" type="text/javascript" src="rocket.js"></script>
+    <script language="javascript" type="text/javascript" src="obstacle.js"></script>
+    
     <script src="sketch.js" type="text/javascript"></script>
 
     <style> 
@@ -22,6 +28,9 @@
         color: #666666;
       }
     canvas {vertical-align: top;}
+    .hide{
+      display: none;
+    }
     
     </style>
   </head>
@@ -29,18 +38,18 @@
      <p class="hide" id="canvas">
     </p>
     
-  <div class="displays" id = "start2">
+  <div class="hide displays" id = "start2">
     start2
   </div>
-  <div class="displays" id = "stop2">
+  <div class="hide displays" id = "stop2">
     stop2
   </div>
   
   
-  <div class="displays" id = "difference">
+  <div class="hide displays" id = "difference">
     difference
   </div>
-  <div class="displays" id = "variance">
+  <div class="hide displays" id = "variance">
     variance
   </div>
   
